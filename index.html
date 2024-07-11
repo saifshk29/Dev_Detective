@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Detective</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!--HEADER-->
+            <div class="header">
+                <p class="detective-text">DevDetective</p>
+                <div class="theme" theme-change>
+                    <p theme_text>DARK</p>
+                    <img src="Images/moon-icon.svg" alt="" class="theme-img" >
+                </div>
+            </div>
+            <!--SEARCH USER-->
+            <div class="search_user">
+                <input type="text" placeholder="Enter a GitHub username..." required autofocus id="input" spellcheck="false" user_input>
+                <p class="clear_search" clear_input>x</p>
+                <p class="no_search_result" no-search>No Search Result</p>
+                <button type="submit" class="search_button" search>Search</button>
+            </div>
+            <!--USER INFORMATION-->
+            <div class="user_information">
+                <!--USER AVATAR-->
+                <div class="user_img">
+                    <img src="Images/avatar.png" alt="" width="125px" height="125px" user_avatar>
+                </div>
+                <!--USER DATA-->
+                <div class="user_data">
+                    <!--DATE AND JOINED DATE-->
+                    <div class="date_name">
+                        <div>
+                            <p class="user_name" username>Name</p>
+                            <a href="" class="user_link" userlink>@xyz</a>
+                        </div>
+                        
+                        <p joindate>Joined 10 May 2022</p>
+                    </div>
+                    <!--USER BIO-->
+                    <p class="user_bio" userbio>I'm a digital nomad, home is where the Wi-Fi connects automatically!🚀🔥</p>
+                    <!--USER STATS-->
+                    <div class="user_stats">
+                        <!--REPOS-->
+                        <div class="Repos stats">
+                            <p class="stats_text">Repos</p>
+                            <p class="stats_inner" repos>XX</p>
+                        </div>
+                        <!--FOLLOWERS-->
+                        <div class="Followers stats">
+                            <p class="stats_text">Followers</p>
+                            <p class="stats_inner" followers>XX</p>
+                        </div>
+                        <!--FOLLOWING-->
+                        <div class="Following stats">
+                            <p class="stats_text">Following</p>
+                            <p class="stats_inner" following>XX</p>
+                        </div>
+                    </div>
+                    <!--PROFILE INFO-->
+                    <div class="profile_info">
+                        <!--Location-->
+                        <div class="location_div profile_info_items">
+                            <img src="Images/location-icon.svg" alt="">
+                            <p location>location</p>
+                        </div>
+                        <!--Portfolio-->
+                        <div class="portfolio_div profile_info_items">
+                            <img src="Images/website-icon.svg" alt="">
+                            <a href="" portfolio>portfolio</a>
+                        </div>
+                        <!--Twitter-->
+                        <div class="twitter_div profile_info_items">
+                            <img src="Images/twitter-icon.svg" alt="">
+                            <a href="" twitter>Twitter</a>
+                        </div>
+                        <!--Company-->
+                        <div class="company_div profile_info_items">
+                            <img src="Images/company-icon.svg" alt="">
+                            <p company>Company</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
